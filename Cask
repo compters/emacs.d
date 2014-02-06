@@ -12,6 +12,7 @@
 (depends-on "flycheck-haskell")
 (depends-on "flycheck-hdevtools")
 (depends-on "go-mode")
+(depends-on "ghci-completion")
 (depends-on "haskell-mode")
 (depends-on "hi2")
 (depends-on "highlight-parentheses")

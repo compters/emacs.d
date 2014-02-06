@@ -1,7 +1,6 @@
 (autoload 'ghc-init "ghc" nil t)
 
 (require 'hi2)
-;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 (add-hook 'haskell-mode-hook 'turn-on-hi2)
 
 (require 'ghci-completion)
@@ -11,14 +10,6 @@
 ;;  (ghc-init)
   (flycheck-mode)
 
-;;  (add-hook 'haskell-mode-hook 'flymake-hlint-load)
-
-  ;; Use simple indentation.
-  ;; (turn-on-haskell-simple-indent)
-  ;; (define-key haskell-mode-map (kbd "<return>") 'haskell-simple-indent-newline-same-col)
-  ;; (define-key haskell-mode-map (kbd "C-<return>") 'haskell-simple-indent-newline-indent)
-
-  ;; Load the current file (and make a session if not already made).
   (define-key haskell-mode-map [?\C-c ?\C-l] 'haskell-process-load-file)
   (define-key haskell-mode-map [f5] 'haskell-process-load-file)
 
