@@ -52,6 +52,8 @@
 	((font-existsp "Bitstream Vera Sans Mono-12")
 	 (set-default-font "Bitstream Vera Sans Mono-12"))))
 
-(bigger-font)
+(when window-system
+  (bigger-font))
+
 
 (provide 'init-ui)
