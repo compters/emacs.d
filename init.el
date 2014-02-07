@@ -18,5 +18,6 @@
 (require 'init-ui)
 (require 'init-haskell)
 (require 'init-misc)
+(require 'init-web)
 
 (provide 'init)
