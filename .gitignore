@@ -1,3 +1,4 @@
 *.elc
 *.sh~
 /.cask/
+/ac-comphist.dat

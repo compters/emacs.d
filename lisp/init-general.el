@@ -38,13 +38,18 @@
 (setq default-buffer-file-coding-system 'utf-8)                      
 (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING))
 
+(setq make-backup-files nil)
+(require 'uniquify) 
+
+;; Enable versioning with default values (keep five last versions, I think!)
+(setq version-control nil)
+
 (defun server-ensure-safe-dir (dir) "Noop" t) 
 
-
 (defun start-tcp-server ()  
+  (interactive)
   (setq server-use-tcp t)
   (setq server-port 8010)
   (server-start))
-
 
 (provide 'init-general)
