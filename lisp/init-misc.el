@@ -34,5 +34,17 @@ by using nxml's indentation rules."
 		    (interactive)
 		    (insert-pound))))
 
+(setq inferior-lisp-program "/usr/bin/sbcl")
+
+(add-hook 'lisp-mode-hook (lambda () (slime-mode t)))
+(add-hook 'inferior-lisp-mode-hook (lambda () (inferior-slime-mode t)))
+
+(slime-setup '(slime-repl
+               slime-fancy
+               slime-fuzzy
+               slime-banner))
+(setq slime-complete-symbol*-fancy t)
+(setq slime-complete-symbol-function 'slime-fuzzy-complete-symbol)
+
 
 (provide 'init-misc)

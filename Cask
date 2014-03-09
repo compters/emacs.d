@@ -39,6 +39,8 @@
 (depends-on "simple-httpd")
 (depends-on "skewer-mode")
 (depends-on "smex")
+(depends-on "tern")
+(depends-on "tern-auto-complete")
 (depends-on "use-package")
 (depends-on "wrap-region")
 (depends-on "yaml-mode")

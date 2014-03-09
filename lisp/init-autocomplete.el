@@ -68,9 +68,14 @@
                ac-source-words-in-same-mode-buffers
                ac-source-words-in-all-buffer))
 
-(dolist (mode '(haskell-mode))
+(dolist (mode '(haskell-mode js3-mode js2-mode))
   (add-to-list 'ac-modes mode))
 
+(add-hook 'js3-mode-hook (lambda () (tern-mode t)))
+(eval-after-load 'tern
+   '(progn
+      (require 'tern-auto-complete)
+      (tern-ac-setup)))
 
 ;; Exclude very large buffers from dabbrev
 (defun sanityinc/dabbrev-friend-buffer (other-buffer)
