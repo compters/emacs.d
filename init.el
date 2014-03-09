@@ -16,6 +16,7 @@
 
 (require 'init-general)
 (require 'init-autocomplete)
+(require 'init-org)
 (require 'init-ui)
 (require 'init-go)
 (require 'init-haskell)

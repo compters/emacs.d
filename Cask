@@ -29,6 +29,7 @@
 (depends-on "js3-mode")
 (depends-on "magit")
 (depends-on "multiple-cursors")
+(depends-on "org-pomodoro")
 (depends-on "pallet")
 (depends-on "popup")
 (depends-on "popwin")
