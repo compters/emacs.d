@@ -1,5 +1,6 @@
 (source melpa)
 
+(depends-on "ac-slime")
 (depends-on "auto-complete")
 (depends-on "bind-key")
 (depends-on "cask")
@@ -39,6 +40,7 @@
 (depends-on "s")
 (depends-on "simple-httpd")
 (depends-on "skewer-mode")
+(depends-on "slime")
 (depends-on "smex")
 (depends-on "tern")
 (depends-on "tern-auto-complete")
