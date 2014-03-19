@@ -18,6 +18,7 @@
 (depends-on "flycheck-cask")
 (depends-on "flycheck-haskell")
 (depends-on "flycheck-hdevtools")
+(depends-on "framemove")
 (depends-on "ghc")
 (depends-on "ghci-completion")
 (depends-on "git-rebase-mode")
