@@ -21,6 +21,7 @@
 (require 'init-go)
 (require 'init-haskell)
 (require 'init-misc)
+(require 'init-python)
 (require 'init-web)
 
 (provide 'init)

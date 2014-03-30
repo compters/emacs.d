@@ -28,6 +28,7 @@
 (depends-on "haskell-mode")
 (depends-on "hi2")
 (depends-on "highlight-parentheses")
+(depends-on "jedi")
 (depends-on "js3-mode")
 (depends-on "magit")
 (depends-on "multiple-cursors")
