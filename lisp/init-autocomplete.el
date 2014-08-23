@@ -68,9 +68,6 @@
                ac-source-words-in-same-mode-buffers
                ac-source-words-in-all-buffer))
 
-(require 'tern)
-(require 'company-tern)
-(require 'company-ghc)
 ;; (dolist (mode '(haskell-mode js3-mode js2-mode))
 ;;   (add-to-list 'ac-modes mode))
 

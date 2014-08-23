@@ -46,5 +46,6 @@ by using nxml's indentation rules."
 (setq slime-complete-symbol*-fancy t)
 (setq slime-complete-symbol-function 'slime-fuzzy-complete-symbol)
 
+(add-to-list 'company-backends 'company-tern)
 
 (provide 'init-misc)

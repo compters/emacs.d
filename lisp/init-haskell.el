@@ -1,15 +1,16 @@
 (autoload 'ghc-init "ghc" nil t)
+(autoload 'ghc-debug "ghc" nil t)
 
 (require 'hi2)
 (add-hook 'haskell-mode-hook 'turn-on-hi2)
 
-(require 'ghci-completion)
-(add-hook 'inferior-haskell-mode-hook 'turn-on-ghci-completion)
+;;(require 'ghci-completion)
+;;(add-hook 'inferior-haskell-mode-hook 'turn-on-ghci-completion)
 
 (defun haskell-hook ()
-;;  (ghc-init)
-  (flycheck-mode)
-
+  (ghc-init)
+;;  (flycheck-mode)
+  (company-mode)
   (define-key haskell-mode-map [?\C-c ?\C-l] 'haskell-process-load-file)
   (define-key haskell-mode-map [f5] 'haskell-process-load-file)
 
@@ -77,5 +78,5 @@
  ;; To enable stylish on save.
  '(haskell-stylish-on-save t)
 )
-
+(add-to-list 'company-backends 'company-ghc)
 (provide 'init-haskell)
