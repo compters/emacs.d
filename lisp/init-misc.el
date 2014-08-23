@@ -25,7 +25,7 @@ by using nxml's indentation rules."
   (setq w32-get-true-file-attributes nil))
 
 ;; Without this it's hell to do a # on a UK keyboard 
-(when (equal system-type 'darwin)
+(when (or (equal system-type 'gnu/linux) (equal system-type 'darwin))
   (defun insert-pound ()
     "Inserts a pound into the buffer"
     (insert "#"))

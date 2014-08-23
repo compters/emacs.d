@@ -69,14 +69,13 @@
 
 ;; Customization
 (custom-set-variables
- ;; Use cabal-dev for the GHCi session. Ensures our dependencies are in scope.
- ;;'(haskell-process-type 'cabal-dev)
- 
+;; '(haskell-process-type 'cabal-repl)
+;; '(haskell-program-name "cabal repl")
  ;; To enable tags generation on save.
  '(haskell-tags-on-save t)
 
  ;; To enable stylish on save.
-;; '(haskell-stylish-on-save t)
+ '(haskell-stylish-on-save t)
 )
 
 (provide 'init-haskell)
