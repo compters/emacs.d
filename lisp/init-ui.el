@@ -35,7 +35,11 @@
 
 (defun normal-font()
   (interactive)
-  (cond ((font-existsp "-outline-Consolas-normal-r-normal-normal-12-97-96-96-c-*-iso8859-1")    
+  (cond ((font-existsp "Hasklig Regular-13")
+         (let ((font "Hasklig Regular-13"))
+           (set-default-font font nil t)
+           (set-fontset-font t '(8500 . 8800) font)))    
+        ((font-existsp "-outline-Consolas-normal-r-normal-normal-12-97-96-96-c-*-iso8859-1")    
 	 (set-default-font "-outline-Consolas-normal-r-normal-normal-12-97-96-96-c-*-iso8859-1"))
 	((font-existsp "Bitstream Vera Sans Mono-10")
 	 (set-default-font "Bitstream Vera Sans Mono-10"))))
