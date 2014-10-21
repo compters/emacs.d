@@ -15,7 +15,9 @@
 (setq powerline-color2 "grey40")
 
 (require 'rainbow-delimiters)
-(global-rainbow-delimiters-mode)
+(add-hook 'go-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'haskell-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'idris-mode-hook 'rainbow-delimiters-mode)
 
 (load-theme 'sanityinc-tomorrow-eighties t)
 (setq visible-bell t)
