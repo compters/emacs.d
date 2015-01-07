@@ -1,4 +1,6 @@
 (source melpa)
+(source gnu)
+(source marmalade)
 
 (depends-on "ac-slime")
 (depends-on "auto-complete")
