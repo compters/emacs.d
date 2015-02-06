@@ -25,13 +25,29 @@
 (require 'init-web)
 
 (provide 'init)
+(exec-path-from-shell-initialize)
+
+(setenv "GOROOT" "/home/ian/go")
+(setenv "GOPATH" "/home/ian/gocode")
+
+(setenv "PATH"
+        (concat "/home/ian/go/bin" ":"
+                "/home/ian/gocode/bin" ":"
+                "/home/ian/.cask/bin" ":"
+                (getenv "PATH")))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ac-modes (quote (emacs-lisp-mode lisp-mode lisp-interaction-mode slime-repl-mode c-mode cc-mode c++-mode java-mode malabar-mode clojure-mode clojurescript-mode scala-mode scheme-mode ocaml-mode tuareg-mode coq-mode agda-mode agda2-mode perl-mode cperl-mode python-mode ruby-mode lua-mode tcl-mode ecmascript-mode php-mode css-mode makefile-mode sh-mode fortran-mode f90-mode ada-mode xml-mode sgml-mode ts-mode sclang-mode verilog-mode qml-mode)))
- '(custom-safe-themes (quote ("06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "968d1ad07c38d02d2e5debffc5638332696ac41af7974ade6f95841359ed73e3" default)))
+ '(ac-modes
+   (quote
+    (emacs-lisp-mode lisp-mode lisp-interaction-mode slime-repl-mode c-mode cc-mode c++-mode java-mode malabar-mode clojure-mode clojurescript-mode scala-mode scheme-mode ocaml-mode tuareg-mode coq-mode agda-mode agda2-mode perl-mode cperl-mode python-mode ruby-mode lua-mode tcl-mode ecmascript-mode php-mode css-mode makefile-mode sh-mode fortran-mode f90-mode ada-mode xml-mode sgml-mode ts-mode sclang-mode verilog-mode qml-mode)))
+ '(custom-safe-themes
+   (quote
+    ("06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "968d1ad07c38d02d2e5debffc5638332696ac41af7974ade6f95841359ed73e3" default)))
+ '(exec-path-from-shell-variables (quote ("PATH" "MANPATH" "GOROOT" "GOPATH")))
  '(haskell-stylish-on-save t)
  '(haskell-tags-on-save t))
 (custom-set-faces

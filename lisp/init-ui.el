@@ -66,6 +66,6 @@
 
 (when window-system
   (bigger-font))
-
-
+(require 'ace-window)
+(global-set-key (kbd "M-p") 'ace-window)
 (provide 'init-ui)

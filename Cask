@@ -3,6 +3,7 @@
 (source marmalade)
 
 (depends-on "ac-slime")
+(depends-on "ace-window")
 (depends-on "auto-complete")
 (depends-on "bind-key")
 (depends-on "cask")
